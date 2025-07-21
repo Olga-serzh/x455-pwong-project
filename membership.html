@@ -7,6 +7,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+      <!-- begin: add jquery script links to support for sortable table -->
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <!-- end: add jquery script links to support for sortable table --> 
+
     <link rel="stylesheet" href="./css/w3.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +61,18 @@
 .membership-btn:hover {
   background-color: #2E7AEE;
   color: white;
+}
+
+
+
+.plan-image img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.plan-image:hover img {
+  transform: scale(1.05);
 }
 
     
@@ -164,11 +189,11 @@
        
           <h1 class="w3-center" style="color: #882AD2;">Choose Your <span style="font-style: italic; font-weight: 300;"> Membership</span></h1>
            <p class="w3-center">
-    <a href="#" style="color: #3b82f6; text-decoration: underline;">Compare the membership</a>
+    <a href="#membership plan" style="color: #3b82f6; text-decoration: underline;">Compare the membership</a>
   </p>
           
             </div>
-            </div>
+           
             
             <section style="text-align: center;">
 
@@ -177,30 +202,88 @@
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
 
     <!-- Basic Plan -->
-    <div style="width: 280px;">
+    <div style="width: 340px;">
       <h3 style="font-weight: 600; margin-bottom: 1rem;">Basic</h3>
-      <img src="./AW_Images/Basic.png" alt="Basic plan with sensor" style="width: 100%; border-radius: 1rem;">
+      <div class="plan-image">
+      <img src="./AW_Images/Basic.png" alt="Basic plan with sensor" style="width: 100%; border-radius: 1rem;"></div>
       <a href="#" class="membership-btn">Start With Basic</a>
     </div>
 
     <!-- Plus Plan -->
-    <div style="width: 280px;">
+    <div style="width: 340px;">
       <h3 style="font-weight: 600; margin-bottom: 1rem;">Plus</h3>
-      <img src="./AW_Images/Plus.png" alt="Plus plan with sensor" style="width: 100%; border-radius: 1rem;">
+      <div class="plan-image">
+      <img src="./AW_Images/Plus.png" alt="Plus plan with sensor" style="width: 100%; border-radius: 1rem;"></div>
       <a href="#" class="membership-btn">Start With Plus</a>
     </div>
 
     <!-- Premium Plan -->
-    <div style="width: 280px;">
+    <div style="width: 340px;">
       <h3 style="font-weight: 600; margin-bottom: 1rem;">Premium</h3>
-      <img src="./AW_Images/Premium.png" alt="Premium plan with sensor" style="width: 100%; border-radius: 1rem;">
+      <div class="plan-image">
+      <img src="./AW_Images/Premium.png" alt="Premium plan with sensor" style="width: 100%; border-radius: 1rem;"></div>
       <a href="#" class="membership-btn">Start With Premium</a>
     </div>
+
+  
 
   </div>
 </section>
 
+ <!-- Sortable Table Section -->
+      <div class="w3-container w3-padding-64" id="membership plan">
+        <div class="w3-padding-large">
+          <h2 class="w3-center" style="color: #1D5BB8;">Compare the Memberships</h2>
+          <!-- add sortable table begin -->
+          <!-- step 1: if the table displays images, add image files to img folder -->
+          <!-- step 2: create a table with 4 columns -->
+          <!-- step 3: add jquery links inside the <head> tag above to support sortability -->
+          <!-- step 4: add javascript in <script> tag below to sort in in ascending/descending order -->
 
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr style="background-color: #494556; color: white;">
+                <th>Plan</th>
+                <th>Monthly Cost</th>
+                <th>Included Features</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
+               <td>
+                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+              </td>
+              <td>$19.99</td>
+              <td>AssistSensor, App Access, Activity & Migraine Logging</td>
+              <td>New Users</td>
+            </tr>
+            <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
+               <td>
+                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+              </td>
+              <td>$29.99</td>
+              <td>All Basic + AI Insights + Symptom History</td>
+              <td>Frequent Migraine Sufferers</td>
+            </tr>
+             <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
+              <td><img src="./img/reamer-01.jpeg" style="width: 120px" /></td>
+              <td>$39.99</td>
+              <td>All Plus + Secure Video Calls + Detailed Health Reports</td>
+              <td>Patients in Active Treatment</td>
+            </tr>
+             <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
+              <td>
+                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+              </td>
+              <td>$79.99</td>
+              <td>Access to Patient Dashboards, Health Reports, Trends & Notes</td>
+              <td>Healthcare Professionals</td>
+            </tr>
+          </table>
+          <!-- add sortable table end -->
+        </div>
+      </div>
+    </div>
      <footer class="footer">
   <div class="footer-container">
     
@@ -251,6 +334,18 @@
       function w3_close() {
         mySidebar.style.display = "none";
       }
+
+       // sortable table begin
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // sortable table end
     </script>
 
   </body>

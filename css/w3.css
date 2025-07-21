@@ -1371,6 +1371,13 @@ a {
   color: #fff !important;
   background-color: #000 !important;
 }
+
+.w3-awpurple,
+.w3-hover-awpurple:hover {
+  color: #fff !important;
+  background-color: #494556 !important;
+}
+
 .w3-grey,
 .w3-hover-grey:hover,
 .w3-gray,
