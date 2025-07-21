@@ -1,0 +1,367 @@
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/w3.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #EBEAEF;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Poppins", sans-serif;
+      }
+        
+      p {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      
+   /* my css */
+     .science-img {
+  float: right;
+  width: 40%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .science-img {
+    float: left;
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+  }
+}
+      
+    
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding w3-card"
+        
+      >
+
+          <!-- step 1: add shopping cart and search icons -->
+        <!-- Font Awesome 4 reference : https://www.w3schools.com/icons/icons_reference.asp -->
+        <div>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-shopping-basket"></i
+          ></a>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-search"></i
+          ></a>
+        </div>
+        <!-- step 1: end -->
+
+        
+        <a href="#home" class="w3-bar-item"><img src="./AW_Images/AW_logo_black.svg" height="20px" width="auto" /></a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="./index.html" class="w3-bar-item top-nav" style="text-decoration: none;">Home</a>
+          <a href="./why_AssistWell.html" class="w3-bar-item top-nav" style="text-decoration: none;">Why AssistWell</a>
+          <a href="./science.html" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;">Science</a>
+          <a href="./membership.html" class="w3-bar-item top-nav" style="text-decoration: none;">Membership</a>
+          <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Features</a>
+          <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Resources</a>
+        </div>
+
+        <!-- step 2: for mobile version -->
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <!-- Source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_startup -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <!-- use the hamburger icon (menu icon) from font-awesome.min.css -->
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- step 2: end -->
+      </div>
+    </div>
+
+    <!-- step 3: for mobile version -->
+    <!-- add sidebar on small screens when clicking the menu icon -->
+    <!-- Source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_startup -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav  w3-large w3-padding-16" style="text-decoration: none;"
+        >Close &times;</a
+      >
+      <a href="./index.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+        >Home</a
+      >
+      <a href="./why_AssistWell.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none; "
+        >Why AssistWell</a
+      >
+      <a href="./science.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;"
+        >Science</a
+      >
+      <a href="./membership.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+        >Membership</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+        >Features</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+        >Resources</a
+      >
+    </nav>
+     <!-- Header -->
+
+
+      <!-- Page content -->
+    <div class="w3-content" style="max-width: 1100px">
+      <!-- Food Section -->
+      <div class="w3-row w3-padding-64" id="food">
+        <div class="w3-padding-large">
+          <h1 class="w3-center" style="color: #882AD2;">The Science <span style="font-style: italic; font-weight: 300;"> Behind Pain</span></h1>
+          <div class="w3-padding-large">
+            
+            <p>
+                
+              <!-- embedded images with text -->
+              <img
+                src="./AW_Images/Science_image 1.png"
+                class="w3-round w3-image science-img"
+                alt="young lady having a migraine"
+              />
+              <h3 style="color: 1D5BB8;">Understanding Migraines: The Science Behind the Pain</h3>
+             <p>Migraines aren’t just headaches — they’re complex neurological events that can be triggered by a wide range of internal and external factors. From changes in sleep and hormone levels to environmental stressors like weather, light, and diet, every person’s migraine pattern is different.
+            </p>
+            </p>
+            <p>
+              AssistWell is built on the science of migraine management. By tracking your body’s health metrics and daily activities, it helps uncover how your unique lifestyle may influence the frequency and intensity of your migraines. The goal isn’t just to react to symptoms — it’s to get ahead of them. With consistent data and AI-powered insights, you can start connecting the dots and making informed choices that support better days.
+              <!-- step 1: use <span> tag to mark up a part of a text, or a part of a document -->
+              <!--    The <span> tag is an inline container -->
+              <!--    Source: https://www.w3schools.com/tags/tag_span.asp -->
+            </p>
+            <p>
+                <span>
+                Reference:
+                <a
+                  href="https://www.mayoclinic.org/search/search-results?q=Migraines"
+                  target="_blank"
+                  class="w3-hover-opacity"
+                >
+                 Mayo Clinic: Understanding Migraines</a
+                >
+              </span>
+            </p>
+          </div>
+
+         
+    
+          <div class="w3-padding-large">
+            
+            <p style="font-family: 'Open Sans'">
+                
+              <!-- embedded images with text -->
+              <img
+                src="./AW_Images/Science_image 2.png"
+                class="w3-round w3-image science-img"
+                alt="Three young ladies laughing at the table"
+              />
+              <h3 style="color: 1D5BB8;">Your Body Knows First: Understanding Early Warning Signs of Migraines</h3>
+            <p>Our bodies often signal imbalances long before we recognize them — subtle changes in heart rate, sleep quality, body temperature, or blood sugar levels can all hint at an oncoming migraine. AssistWell captures these signals through continuous monitoring, helping you identify early warning signs. By recognizing patterns in your body’s data, you can take proactive steps to reduce the severity or even prevent an episode altogether.
+            </p>
+        </p>
+            <p>
+              These early cues are especially valuable for individuals whose migraines are triggered by physiological stress or hormonal shifts. With the right insights, users can shift from reactive to preventative care.
+              <!-- step 1: use <span> tag to mark up a part of a text, or a part of a document -->
+              <!--    The <span> tag is an inline container -->
+              <!--    Source: https://www.w3schools.com/tags/tag_span.asp -->
+            </p>
+            <p>
+                <span>
+                Reference:
+                <!-- step 2: use <a> tag to create a hyperlink -->
+                <!--    The hyperlink can be internal and external -->
+                <!--    Use "_blank" for the target property to open a page in a new tab -->
+                <!-- step 3 (optional): customize <a> tag styles - see <style> tag above -->
+                <a
+                  href="https://my.clevelandclinic.org/health/diseases/5005-migraine-headaches"
+                  target="_blank"
+                  class="w3-hover-opacity"
+                >
+                 Cleveland Clinic: Migraine Headaches</a
+                >
+              </span>
+            </p>
+          </div>
+
+
+          <div class="w3-padding-large">
+            
+            <p>
+                
+              <!-- embedded images with text -->
+              <img
+                src="./AW_Images/Science_image 3.png"
+                class="w3-round w3-image science-img"
+                alt="A happy young lady looking at her mobile"
+              />
+              <h3 style="color: 1D5BB8;">The Role of Lifestyle in Migraine Management</h3>
+            <p>While genetics and neurological factors play a role in migraines, lifestyle habits often act as the tipping point. Irregular sleep, skipped meals, high stress, dehydration, and even extended screen time can all influence the likelihood and severity of an episode. What makes these triggers especially challenging is how sub tle and personal they can be — what affects one person may not affect another.
+            </p>
+        </p>
+            <p>
+              AssistWell helps bring clarity by encouraging consistent logging of your daily routines and behaviors, while its wearable sensor tracks your body’s response in real time. Over time, patterns emerge that help you understand how your lifestyle may be impacting your migraines. With better awareness comes better decision-making — and the ability to take back control of your day before a migraine takes over.
+              <!-- step 1: use <span> tag to mark up a part of a text, or a part of a document -->
+              <!--    The <span> tag is an inline container -->
+              <!--    Source: https://www.w3schools.com/tags/tag_span.asp -->
+            </p>
+            <p>
+                <span>
+                Reference:
+                <!-- step 2: use <a> tag to create a hyperlink -->
+                <!--    The hyperlink can be internal and external -->
+                <!--    Use "_blank" for the target property to open a page in a new tab -->
+                <!-- step 3 (optional): customize <a> tag styles - see <style> tag above -->
+                <a
+                  href="https://americanheadachesociety.org/resources/primary-care/lifestyle-modification-for-migraine"
+                  target="_blank"
+                  class="w3-hover-opacity"
+                >
+                 American Headache Society: Lifestyle Modification for Migraine</a
+                >
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+<!-- step 4: add javascript to support responsive navbar -->
+ <!-- step 4: add javascript to support responsive navbar -->
+    <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+
+      // carousel slideshow begin
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      // hook each carousel button
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // carousel slideshow end
+    </script>
+    <!-- step 4: end -->
+
+    <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Logo -->
+    <div class="footer-logo">
+      <span><img src="./AW_Images/AW_logo_white.svg" height="12px" width="auto" /></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-links">
+      <a href="#">User Guide</a>
+      <a href="#">Help Center</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Partners</a>
+    </div>
+
+    <!-- Social Icons and App Store -->
+    <div class="footer-social">
+      <div class="icons">
+        <a href="#"><img src="./AW_Images/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="./AW_Images/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="./AW_Images/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="./AW_Images/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="./AW_Images/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+     
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    AssistWell © 2025. All rights reserved.
+  </div>
+</footer>
+
+
+  </body>
+</html>

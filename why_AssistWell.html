@@ -29,12 +29,15 @@
       h6 {
         font-family: "Poppins", sans-serif;
       }
+      p {
+        font-family: "Open Sans", sans-serif;
+      }
       
    .mySlides {
     display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 55%;
+        max-width: 80%;
       }
       @media (max-width: 768px) {
   .mySlides {
@@ -71,8 +74,8 @@
         <div class="w3-right w3-hide-small">
           <a href="./index.html" class="w3-bar-item top-nav" style="text-decoration: none;">Home</a>
           <a href="./why_AssistWell.html" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;">Why AssistWell</a>
-          <a href="#work" class="w3-bar-item top-nav" style="text-decoration: none;">Science</a>
-          <a href="#pricing" class="w3-bar-item top-nav" style="text-decoration: none;">Membership</a>
+          <a href="./science.html" class="w3-bar-item top-nav" style="text-decoration: none;">Science</a>
+          <a href="./membership.html" class="w3-bar-item top-nav" style="text-decoration: none;">Membership</a>
           <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Features</a>
           <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Resources</a>
         </div>
@@ -106,16 +109,16 @@
         class="w3-bar-item top-nav  w3-large w3-padding-16" style="text-decoration: none;"
         >Close &times;</a
       >
-      <a href="#about" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a href="./index.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
         >Home</a
       >
-      <a href="#menu" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;"
+      <a href="./why_AssistWell.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;"
         >Why AssistWell</a
       >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a href="./science.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
         >Science</a
       >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a href="./membership.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
         >Membership</a
       >
       <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
@@ -144,6 +147,11 @@
             <img
               class="mySlides"
               src="./AW_Images/Carousel/Carousel 2.png"
+              style="width: 100%; display: none"
+            />
+             <img
+              class="mySlides"
+              src="./AW_Images/Carousel/Carousel 3.png"
               style="width: 100%; display: none"
             />
             <img
@@ -213,6 +221,47 @@
           <h1 class="w3-center" style="color: #882AD2;">Why AssistWell</h1>
           </div>
 
+<section class="feature-section" style="padding: 4rem 1rem;">
+  <div class="feature-container" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 12rem; row-gap: 3rem;">
+    
+    <!-- Feature 1 -->
+    <div class="feature-box" style="text-align: left;">
+      <img src="./AW_Images/Why AssistWell Icons/Vector-1.svg" alt="Heart icon" style="width: 40px; margin-bottom: 1rem;">
+      <h3>Designed for Real Life</h3>
+      <p>
+        AssistWell fits into your everyday routine — not the other way around. Whether you're at work, on a walk, or winding down for the night, tracking your health feels natural, not disruptive.
+      </p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="feature-box" style="text-align: left;">
+      <img src="./AW_Images/Why AssistWell Icons/Vector-2.svg" alt="Science icon" style="width: 40px; margin-bottom: 1rem;">
+      <h3>Backed by Science</h3>
+      <p>
+        Developed with input from healthcare professionals and grounded in clinical research, AssistWell combines medical-grade data tracking with AI-powered analysis to support smarter care.
+      </p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="feature-box" style="text-align: left;">
+      <img src="./AW_Images/Why AssistWell Icons/Vector-3.svg" alt="Personalization icon" style="width: 40px; margin-bottom: 1rem;">
+      <h3>Personalized, Not One-Size-Fits-All</h3>
+      <p>
+        No two migraine stories are the same. AssistWell adapts to your unique patterns and provides insights tailored to your body, your lifestyle, and your needs.
+      </p>
+    </div>
+
+    <!-- Feature 4 -->
+    <div class="feature-box" style="text-align: left;">
+      <img src="./AW_Images/Why AssistWell Icons/Vector-4.svg" alt="Checkmark icon" style="width: 40px; margin-bottom: 1rem;">
+      <h3>More Than an App — It’s a Care Partner</h3>
+      <p>
+        AssistWell connects you to your care team through secure video calls and keeps your health plan accessible, so you’re never navigating your journey alone.
+      </p>
+    </div>
+
+  </div>
+</section>
  
 
 
