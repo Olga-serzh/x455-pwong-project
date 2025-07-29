@@ -1,14 +1,15 @@
 <html>
   <head>
-    <title>W3.CSS Template</title>
+    <link rel="icon" type="image/png" href="./AW_Images/AW-favicon1.svg" />
+    <title>AssistWell</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-     <link
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-      <!-- begin: add jquery script links to support for sortable table -->
+    <!-- begin: add jquery script links to support for sortable table -->
     <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
     <script
       type="text/JavaScript"
@@ -18,21 +19,27 @@
       type="text/JavaScript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
     ></script>
-    <!-- end: add jquery script links to support for sortable table --> 
+    <!-- end: add jquery script links to support for sortable table -->
 
     <link rel="stylesheet" href="./css/w3.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       body {
         font-family: "Poppins", sans-serif;
-        background-color: #F8F8F8;
+        background-color: #f8f8f8;
       }
       h1,
       h2,
@@ -42,55 +49,47 @@
       h6 {
         font-family: "Poppins", sans-serif;
       }
-      
+
       p {
         font-family: "Open Sans", sans-serif;
       }
       .membership-btn {
-  display: inline-block; 
-  padding: 0.75rem 1.5rem;
-  border: 1px solid #2E7AEE;
-  border-radius: 999px;
-  background-color: transparent;
-  color: #2E7AEE;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin: 2rem 0;
-}
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border: 1px solid #2e7aee;
+        border-radius: 999px;
+        background-color: transparent;
+        color: #2e7aee;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        margin: 2rem 0;
+      }
 
-.membership-btn:hover {
-  background-color: #2E7AEE;
-  color: white;
-}
+      .membership-btn:hover {
+        background-color: #2e7aee;
+        color: white;
+      }
 
+      .plan-image img {
+        width: 100%;
+        border-radius: 1rem;
+        transition: transform 0.3s ease;
+      }
 
-
-.plan-image img {
-  width: 100%;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.plan-image:hover img {
-  transform: scale(1.05);
-}
-
-    
+      .plan-image:hover img {
+        transform: scale(1.05);
+      }
     </style>
   </head>
   <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-      <div
-        class="w3-bar w3-white w3-padding w3-card"
-        
-      >
-
-          <!-- step 1: add shopping cart and search icons -->
+      <div class="w3-bar w3-white w3-padding w3-card">
+        <!-- step 1: add shopping cart and search icons -->
         <!-- Font Awesome 4 reference : https://www.w3schools.com/icons/icons_reference.asp -->
         <div>
           <a class="w3-padding-large w3-hide-small w3-right"
-            ><i class="fa fa-shopping-basket"></i
+            ><i class="fa fa-shopping-cart"></i
           ></a>
           <a class="w3-padding-large w3-hide-small w3-right"
             ><i class="fa fa-search"></i
@@ -98,16 +97,47 @@
         </div>
         <!-- step 1: end -->
 
-        
-        <a href="#home" class="w3-bar-item"><img src="./AW_Images/AW_logo_black.svg" height="20px" width="auto" /></a>
+        <a href="./" class="w3-bar-item"
+          ><img src="./AW_Images/AW_logo_black.svg" height="18px" width="auto"
+        /></a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
-          <a href="./index.html" class="w3-bar-item top-nav" style="text-decoration: none;">Home</a>
-          <a href="./why_AssistWell.html" class="w3-bar-item top-nav" style="text-decoration: none;">Why AssistWell</a>
-          <a href="./science.html" class="w3-bar-item top-nav" style="text-decoration: none;">Science</a>
-          <a href="./membership.html" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;">Membership</a>
-          <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Features</a>
-          <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Resources</a>
+          <a
+            href="./index.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Home</a
+          >
+          <a
+            href="./why_AssistWell.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Why AssistWell</a
+          >
+          <a
+            href="./science.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Science</a
+          >
+          <a
+            href="./membership.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none; color: #882ad2"
+            >Membership</a
+          >
+          <a
+            href="./features.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Features</a
+          >
+          <a
+            href="./resources.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Resources</a
+          >
         </div>
 
         <!-- step 2: for mobile version -->
@@ -136,25 +166,50 @@
       <a
         href="javascript:void(0)"
         onclick="w3_close()"
-        class="w3-bar-item top-nav  w3-large w3-padding-16" style="text-decoration: none;"
+        class="w3-bar-item top-nav w3-large w3-padding-16"
+        style="text-decoration: none"
         >Close &times;</a
       >
-      <a href="./index.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./index.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Home</a
       >
-      <a href="./why_AssistWell.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./why_AssistWell.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Why AssistWell</a
       >
-      <a href="./science.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./science.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Science</a
       >
-      <a href="./membership.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;"
+      <a
+        href="./membership.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none; color: #882ad2"
         >Membership</a
       >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./features.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Features</a
       >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./resources.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Resources</a
       >
     </nav>
@@ -163,7 +218,7 @@
     <!-- Header -->
     <header
       class="w3-display-container w3-content w3-wide"
-      style="max-width: 1600px; min-width: 500px; padding-top: 20px;"
+      style="max-width: 1600px; min-width: 500px; padding-top: 20px"
       id="home"
     >
       <img
@@ -173,67 +228,104 @@
         width="1600"
         height="800"
       />
-     <div class="w3-display-left w3-text-black" style="padding-left: 80px; padding-top: 50px;">
-       <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal;">Let's Take Care</span><br>
-       <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal;">of This Together.</span><br>
-       <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="letter-spacing: normal;">Let's Take Care</span><br>
-       <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="letter-spacing: normal;">of This Together.</span><br>
-       <h6><a href="#" class="learn-more-btn">Join Now</a></h6>
-     </div> 
+      <div
+        class="w3-display-left w3-text-black"
+        style="padding-left: 80px; padding-top: 50px"
+      >
+        <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal"
+          >Let's Take Care</span
+        ><br />
+        <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal"
+          >of This Together.</span
+        ><br />
+        <span
+          class="w3-xxlarge w3-hide-large w3-hide-medium"
+          style="letter-spacing: normal"
+          >Let's Take Care</span
+        ><br />
+        <span
+          class="w3-xxlarge w3-hide-large w3-hide-medium"
+          style="letter-spacing: normal"
+          >of This Together.</span
+        ><br />
+        <h6><a href="#" class="learn-more-btn">Join Now</a></h6>
+      </div>
     </header>
 
-      <!-- Page content -->
+    <!-- Page content -->
     <div class="w3-content" style="max-width: 1400px">
       <!-- Membership Section -->
       <div class="w3-row w3-padding-64" id="Membership">
-       
-          <h1 class="w3-center" style="color: #882AD2;">Choose Your <span style="font-style: italic; font-weight: 300;"> Membership</span></h1>
-           <p class="w3-center">
-    <a href="#membership plan" style="color: #3b82f6; text-decoration: underline;">Compare the membership</a>
-  </p>
-          
+        <h1 class="w3-center" style="color: #882ad2; font-weight: 600">
+          Choose Your
+          <span style="font-style: italic; font-weight: 300"> Membership</span>
+        </h1>
+        <p class="w3-center">
+          <a
+            href="#membership plan"
+            style="color: #3b82f6; text-decoration: underline"
+            >Compare the membership</a
+          >
+        </p>
+      </div>
+
+      <section style="text-align: center">
+        <!-- Membership Cards -->
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+          "
+        >
+          <!-- Basic Plan -->
+          <div style="width: 340px">
+            <h3 style="font-weight: 600; margin-bottom: 1rem">Basic</h3>
+            <div class="plan-image">
+              <img
+                src="./AW_Images/Basic.png"
+                alt="Basic plan with sensor"
+                style="width: 100%; border-radius: 1rem"
+              />
             </div>
-           
-            
-            <section style="text-align: center;">
+            <a href="#" class="membership-btn">Start With Basic</a>
+          </div>
 
+          <!-- Plus Plan -->
+          <div style="width: 340px">
+            <h3 style="font-weight: 600; margin-bottom: 1rem">Plus</h3>
+            <div class="plan-image">
+              <img
+                src="./AW_Images/Plus.png"
+                alt="Plus plan with sensor"
+                style="width: 100%; border-radius: 1rem"
+              />
+            </div>
+            <a href="#" class="membership-btn">Start With Plus</a>
+          </div>
 
-  <!-- Membership Cards -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+          <!-- Premium Plan -->
+          <div style="width: 340px">
+            <h3 style="font-weight: 600; margin-bottom: 1rem">Premium</h3>
+            <div class="plan-image">
+              <img
+                src="./AW_Images/Premium.png"
+                alt="Premium plan with sensor"
+                style="width: 100%; border-radius: 1rem"
+              />
+            </div>
+            <a href="#" class="membership-btn">Start With Premium</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- Basic Plan -->
-    <div style="width: 340px;">
-      <h3 style="font-weight: 600; margin-bottom: 1rem;">Basic</h3>
-      <div class="plan-image">
-      <img src="./AW_Images/Basic.png" alt="Basic plan with sensor" style="width: 100%; border-radius: 1rem;"></div>
-      <a href="#" class="membership-btn">Start With Basic</a>
-    </div>
-
-    <!-- Plus Plan -->
-    <div style="width: 340px;">
-      <h3 style="font-weight: 600; margin-bottom: 1rem;">Plus</h3>
-      <div class="plan-image">
-      <img src="./AW_Images/Plus.png" alt="Plus plan with sensor" style="width: 100%; border-radius: 1rem;"></div>
-      <a href="#" class="membership-btn">Start With Plus</a>
-    </div>
-
-    <!-- Premium Plan -->
-    <div style="width: 340px;">
-      <h3 style="font-weight: 600; margin-bottom: 1rem;">Premium</h3>
-      <div class="plan-image">
-      <img src="./AW_Images/Premium.png" alt="Premium plan with sensor" style="width: 100%; border-radius: 1rem;"></div>
-      <a href="#" class="membership-btn">Start With Premium</a>
-    </div>
-
-  
-
-  </div>
-</section>
-
- <!-- Sortable Table Section -->
+      <!-- Sortable Table Section -->
       <div class="w3-container w3-padding-64" id="membership plan">
         <div class="w3-padding-large">
-          <h2 class="w3-center" style="color: #1D5BB8;">Compare the Memberships</h2>
+          <h2 class="w3-center" style="color: #1d5bb8">
+            Compare the Memberships
+          </h2>
           <!-- add sortable table begin -->
           <!-- step 1: if the table displays images, add image files to img folder -->
           <!-- step 2: create a table with 4 columns -->
@@ -242,41 +334,57 @@
 
           <table id="myTable" class="w3-table-all">
             <thead>
-              <tr style="background-color: #494556; color: white;">
+              <tr style="background-color: #494556; color: white">
                 <th>Plan</th>
                 <th>Monthly Cost</th>
                 <th>Included Features</th>
                 <th>Best For</th>
               </tr>
             </thead>
-            <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
-               <td>
-                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
+              <td>
+                <img
+                  src="./AW_Images/Membership Icons/Basic.svg"
+                  style="width: 80px"
+                />
               </td>
               <td>$19.99</td>
               <td>AssistSensor, App Access, Activity & Migraine Logging</td>
               <td>New Users</td>
             </tr>
-            <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
-               <td>
-                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
+              <td>
+                <img
+                  src="./AW_Images/Membership Icons/Plus.svg"
+                  style="width: 80px"
+                />
               </td>
               <td>$29.99</td>
               <td>All Basic + AI Insights + Symptom History</td>
               <td>Frequent Migraine Sufferers</td>
             </tr>
-             <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
-              <td><img src="./img/reamer-01.jpeg" style="width: 120px" /></td>
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
+              <td>
+                <img
+                  src="./AW_Images/Membership Icons/Premium.svg"
+                  style="width: 80px"
+                />
+              </td>
               <td>$39.99</td>
               <td>All Plus + Secure Video Calls + Detailed Health Reports</td>
               <td>Patients in Active Treatment</td>
             </tr>
-             <tr class="w3-hover-awpurple" style="background-color: #EBEAEF;">
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
               <td>
-                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+                <img
+                  src="./AW_Images/Membership Icons/Provider.svg"
+                  style="width: 80px"
+                />
               </td>
               <td>$79.99</td>
-              <td>Access to Patient Dashboards, Health Reports, Trends & Notes</td>
+              <td>
+                Access to Patient Dashboards, Health Reports, Trends & Notes
+              </td>
               <td>Healthcare Professionals</td>
             </tr>
           </table>
@@ -284,41 +392,47 @@
         </div>
       </div>
     </div>
-     <footer class="footer">
-  <div class="footer-container">
-    
-    <!-- Logo -->
-    <div class="footer-logo">
-      <span><img src="./AW_Images/AW_logo_white.svg" height="12px" width="auto" /></span>
-    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <span
+            ><img
+              src="./AW_Images/AW_logo_white.svg"
+              height="12px"
+              width="auto"
+          /></span>
+        </div>
 
-    <!-- Navigation Links -->
-    <div class="footer-links">
-      <a href="#">User Guide</a>
-      <a href="#">Help Center</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Partners</a>
-    </div>
+        <!-- Navigation Links -->
+        <div class="footer-links">
+          <a href="#">User Guide</a>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Partners</a>
+        </div>
 
-    <!-- Social Icons and App Store -->
-    <div class="footer-social">
-      <div class="icons">
-        <a href="#"><img src="./AW_Images/youtube.svg" alt="YouTube"></a>
-        <a href="#"><img src="./AW_Images/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="./AW_Images/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="./AW_Images/instagram.svg" alt="Instagram"></a>
-        <a href="#"><img src="./AW_Images/linkedin.svg" alt="LinkedIn"></a>
+        <!-- Social Icons and App Store -->
+        <div class="footer-social">
+          <div class="icons">
+            <a href="#"><img src="./AW_Images/youtube.svg" alt="YouTube" /></a>
+            <a href="#"
+              ><img src="./AW_Images/facebook.svg" alt="Facebook"
+            /></a>
+            <a href="#"><img src="./AW_Images/twitter.svg" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="./AW_Images/instagram.svg" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="./AW_Images/linkedin.svg" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
       </div>
-     
-    </div>
 
-  </div>
-
-  <div class="footer-bottom">
-    AssistWell © 2025. All rights reserved.
-  </div>
-</footer>
-<script>
+      <div class="footer-bottom">AssistWell © 2025. All rights reserved.</div>
+    </footer>
+    <script>
       // Toggle between showing and hiding the sidebar when clicking the menu icon
       var mySidebar = document.getElementById("mySidebar");
 
@@ -335,7 +449,7 @@
         mySidebar.style.display = "none";
       }
 
-       // sortable table begin
+      // sortable table begin
       $(document).ready(function () {
         $("table#myTable").tablesorter({
           sortList: [
@@ -347,6 +461,5 @@
       });
       // sortable table end
     </script>
-
   </body>
 </html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="./AW_Images/AW-favicon1.svg" />
+    <title>AssistWell</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/w3.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #ebeaef;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .my-scrolling {
+        height: 300px;
+        overflow: auto;
+      }
+
+      /* accordion button hover */
+      #accordionBtn1:hover,
+      #accordionBtn2:hover,
+      #accordionBtn3:hover,
+      #accordionBtn4:hover,
+      #accordionBtn5:hover {
+        background-color: #494556 !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-padding w3-card">
+        <!-- step 1: add shopping cart and search icons -->
+        <!-- Font Awesome 4 reference : https://www.w3schools.com/icons/icons_reference.asp -->
+        <div>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-shopping-cart"></i
+          ></a>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-search"></i
+          ></a>
+        </div>
+        <!-- step 1: end -->
+
+        <a href="./index.html" class="w3-bar-item"
+          ><img src="./AW_Images/AW_logo_black.svg" height="18px" width="auto"
+        /></a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a
+            href="./index.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Home</a
+          >
+          <a
+            href="./why_AssistWell.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Why AssistWell</a
+          >
+          <a
+            href="./science.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Science</a
+          >
+          <a
+            href="./membership.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Membership</a
+          >
+          <a
+            href="#contact"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none; color: #882ad2"
+            >Features</a
+          >
+          <a
+            href="./resources.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Resources</a
+          >
+        </div>
+
+        <!-- step 2: for mobile version -->
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <!-- Source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_startup -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <!-- use the hamburger icon (menu icon) from font-awesome.min.css -->
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- step 2: end -->
+      </div>
+    </div>
+
+    <!-- step 3: for mobile version -->
+    <!-- add sidebar on small screens when clicking the menu icon -->
+    <!-- Source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_startup -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav w3-large w3-padding-16"
+        style="text-decoration: none"
+        >Close &times;</a
+      >
+      <a
+        href="./index.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
+        >Home</a
+      >
+      <a
+        href="./why_AssistWell.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
+        >Why AssistWell</a
+      >
+      <a
+        href="./science.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
+        >Science</a
+      >
+      <a
+        href="./membership.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
+        >Membership</a
+      >
+      <a
+        href="./features.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none; color: #882ad2"
+        >Features</a
+      >
+      <a
+        href="./resources.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
+        >Resources</a
+      >
+    </nav>
+
+    <!-- step 3: end -->
+    <!-- step 4: add javascript to support responsive navbar -->
+
+    <!-- Page Content -->
+    <div class="w3-content" style="max-width: 1100px">
+      <!-- Features Section -->
+      <div class="w3-container w3-padding-64" id="features">
+        <div class="w3-padding-large">
+          <h1 class="w3-center" style="color: #882ad2; font-weight: 600">
+            Explore
+            <span style="font-style: italic; font-weight: 300">
+              the Features</span
+            >
+          </h1>
+
+          <!-- step 1: add image files to img folder -->
+          <!--    each lightbox should have a thumbnail image and a larger image -->
+          <!-- step 2: add thumbnail image -->
+          <!-- step 3: add modal (background image and close button) -->
+          <!-- create first row to have 3 thumbnail images, 
+             each image takes up 4 columns out of the 12 columns grid,
+             we use classes w3-col s4 -->
+          <!-- first row of thumbnail images created below -->
+          <div class="w3-row-padding" style="margin: 15px 0px">
+            <!-- first thumbnail image created below -->
+            <div class="w3-col s4">
+              <img
+                src="./AW_Images/Features/Feature 1.png"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal01').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+
+            <!-- second thumbnail image created below
+               we set 'modal02' in getElementById('modal02') -->
+            <div class="w3-col s4">
+              <img
+                src="./AW_Images/Features/Feature 2.png"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal02').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+
+            <!-- continue to add the last thumbnail image in the first row here -->
+            <div class="w3-col s4">
+              <img
+                src="./AW_Images/Features/Feature 3.png"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal03').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+          </div>
+
+          <!-- if needed, follow the samples above to create second row of thumbnail images here -->
+          <div class="w3-row-padding" style="margin: 15px 0px">
+            <div class="w3-col s4">
+              <img
+                src="./AW_Images/Features/Feature 4.png"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal04').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+            <div class="w3-col s4">
+              <img
+                src="./AW_Images/Features/Feature 5.png"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal05').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+            <div class="w3-col s4">
+              <img
+                src="./AW_Images/Features/Feature 6.png"
+                style="width: 100%; cursor: zoom-in"
+                onclick="document.getElementById('modal06').style.display='block'"
+                class="w3-hover-shadow"
+              />
+            </div>
+          </div>
+
+          <!-- add the first modal, set id="modal01"-->
+          <!-- each lightbox content (modal) should have a unique modal id -->
+          <div
+            id="modal01"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">Feature 1</h4>
+              <img
+                src="./AW_Images/Features/Feature 1-zoom.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div
+            id="modal02"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">Feature 2</h4>
+              <img
+                src="./AW_Images/Features/Feature 2-zoom.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div
+            id="modal03"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">Feature 3</h4>
+              <img
+                src="./AW_Images/Features/Feature 3-zoom.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div
+            id="modal04"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">Feature 4</h4>
+              <img
+                src="./AW_Images/Features/Feature 4-zoom.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div
+            id="modal05"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">Feature 5</h4>
+              <img
+                src="./AW_Images/Features/Feature 5-zoom.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div
+            id="modal06"
+            class="w3-modal"
+            onclick="this.style.display='none'"
+          >
+            <!-- add close button-->
+            <span
+              class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+              style="cursor: pointer"
+              >&times;</span
+            >
+            <!-- add modal background image -->
+            <div class="w3-modal-content w3-animate-zoom">
+              <h4 class="w3-center">Feature 6</h4>
+              <img
+                src="./AW_Images/Features/Feature 6-zoom.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <br />
+          <h1
+            class="w3-center"
+            style="color: #171717; font-weight: 600; font-size: 24px"
+          >
+            Questions?
+            <span style="font-style: italic; font-weight: 300">
+              We've got you covered!</span
+            >
+          </h1>
+          <div class="w3-col w3-left" style="padding-right: 3px">
+            <!-- add accordion button here -->
+            <!-- set button to myAccordion('accordion1') to link to its accordion content -->
+            <!-- set a unique id="accordionBtn1" for the button -->
+            <button
+              onclick="myAccordion('accordion1')"
+              class="w3-button w3-block w3-awgrey w3-left-align"
+              id="accordionBtn1"
+            >
+              <!-- 
+                  Here is using Font Awesome 4 css and icon. You may check it out here:
+                    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                  Note: there are 2 versions - 4 and 5. This website is using Font Awesome 4.
+                -->
+              <h4>
+                What is AssistWell?
+                <i class="fa fa-caret-down" style="float: right"></i>
+              </h4>
+            </button>
+            <!-- add accordion content here -->
+            <!-- set a unique id="accordion1" for the accordion content -->
+            <div
+              id="accordion1"
+              class="w3-hide w3-container"
+              style="height: 140px"
+            >
+              <p>
+                AssistWell is a personalized migraine management system that
+                combines a wearable sensor, an intuitive mobile app, and smart
+                AI insights. It helps you track symptoms, identify triggers, and
+                connect with your care team, all in one place. AssistWell is
+                designed to fit naturally into your daily routine without
+                disrupting it. Whether you’re newly diagnosed or have been
+                living with migraines for years, AssistWell gives you the tools
+                to better understand your health and take control of your care.
+              </p>
+            </div>
+          </div>
+          <div class="w3-col w3-left" style="padding-right: 3px">
+            <!-- add accordion button here -->
+            <!-- set button to myAccordion('accordion1') to link to its accordion content -->
+            <!-- set a unique id="accordionBtn1" for the button -->
+            <button
+              onclick="myAccordion('accordion2')"
+              class="w3-button w3-block w3-awgrey w3-left-align"
+              id="accordionBtn2"
+            >
+              <!-- 
+                  Here is using Font Awesome 4 css and icon. You may check it out here:
+                    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                  Note: there are 2 versions - 4 and 5. This website is using Font Awesome 4.
+                -->
+              <h4>
+                Does applying AssistSensor hurt?
+                <i class="fa fa-caret-down" style="float: right"></i>
+              </h4>
+            </button>
+            <!-- add accordion content here -->
+            <!-- set a unique id="accordion2" for the accordion content -->
+            <div
+              id="accordion2"
+              class="w3-hide w3-container"
+              style="height: 140px"
+            >
+              <p>
+                Not at all. The AssistSensor is designed to be comfortable and
+                completely non-invasive. It attaches gently to your skin with a
+                medical-grade adhesive, similar to a small fitness patch. Most
+                users say they barely notice it during daily activities —
+                including sleep, exercise, and work. You can apply or remove it
+                easily at home without needing a doctor.
+              </p>
+            </div>
+          </div>
+          <div class="w3-col w3-left" style="padding-right: 3px">
+            <!-- add accordion button here -->
+            <!-- set button to myAccordion('accordion1') to link to its accordion content -->
+            <!-- set a unique id="accordionBtn1" for the button -->
+            <button
+              onclick="myAccordion('accordion3')"
+              class="w3-button w3-block w3-awgrey w3-left-align"
+              id="accordionBtn3"
+            >
+              <!-- 
+                  Here is using Font Awesome 4 css and icon. You may check it out here:
+                    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                  Note: there are 2 versions - 4 and 5. This website is using Font Awesome 4.
+                -->
+              <h4>
+                Is AssistWell right for me?
+                <i class="fa fa-caret-down" style="float: right"></i>
+              </h4>
+            </button>
+            <!-- add accordion content here -->
+            <!-- set a unique id="accordion2" for the accordion content -->
+            <div
+              id="accordion3"
+              class="w3-hide w3-container"
+              style="height: 140px"
+            >
+              <p>
+                If you experience migraines and want a smarter, easier way to
+                manage them, AssistWell may be a great fit. It’s especially
+                helpful for people who want to understand their personal
+                migraine patterns and reduce surprise attacks. Whether you track
+                your symptoms already or are just getting started, AssistWell
+                adapts to your lifestyle and health needs. It's also ideal for
+                those working with a healthcare provider, as it helps bring real
+                data into the conversation.
+              </p>
+            </div>
+          </div>
+          <div class="w3-col w3-left" style="padding-right: 3px">
+            <!-- add accordion button here -->
+            <!-- set button to myAccordion('accordion1') to link to its accordion content -->
+            <!-- set a unique id="accordionBtn1" for the button -->
+            <button
+              onclick="myAccordion('accordion4')"
+              class="w3-button w3-block w3-awgrey w3-left-align"
+              id="accordionBtn4"
+            >
+              <!-- 
+                  Here is using Font Awesome 4 css and icon. You may check it out here:
+                    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                  Note: there are 2 versions - 4 and 5. This website is using Font Awesome 4.
+                -->
+              <h4>
+                What are the benefits of using AssistWell?
+                <i class="fa fa-caret-down" style="float: right"></i>
+              </h4>
+            </button>
+            <!-- add accordion content here -->
+            <!-- set a unique id="accordion2" for the accordion content -->
+            <div
+              id="accordion4"
+              class="w3-hide w3-container"
+              style="height: 140px"
+            >
+              <p>
+                AssistWell offers a complete system for managing migraines —
+                from real-time symptom tracking to personalized health insights.
+                By wearing the AssistSensor and logging daily activity in the
+                app, you start to see patterns that help prevent future attacks.
+                The app’s AI helps connect the dots between things like sleep,
+                stress, hydration, and environment. Plus, it creates
+                easy-to-share reports for your care team, so your treatment can
+                be more informed and proactive.
+              </p>
+            </div>
+          </div>
+          <div class="w3-col w3-left" style="padding-right: 3px">
+            <!-- add accordion button here -->
+            <!-- set button to myAccordion('accordion1') to link to its accordion content -->
+            <!-- set a unique id="accordionBtn1" for the button -->
+            <button
+              onclick="myAccordion('accordion5')"
+              class="w3-button w3-block w3-awgrey w3-left-align"
+              id="accordionBtn5"
+            >
+              <!-- 
+                  Here is using Font Awesome 4 css and icon. You may check it out here:
+                    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                  Note: there are 2 versions - 4 and 5. This website is using Font Awesome 4.
+                -->
+              <h4>
+                Is AssistSensor covered by insurance?
+                <i class="fa fa-caret-down" style="float: right"></i>
+              </h4>
+            </button>
+            <!-- add accordion content here -->
+            <!-- set a unique id="accordion2" for the accordion content -->
+            <div
+              id="accordion5"
+              class="w3-hide w3-container"
+              style="height: 140px"
+            >
+              <p>
+                Coverage for AssistSensor depends on your insurance provider and
+                plan. In some cases, it may be reimbursable through health
+                savings accounts (HSA) or flexible spending accounts (FSA). We
+                recommend checking with your insurance company or contacting our
+                support team for guidance on your options. AssistWell is also
+                working with healthcare partners to expand accessibility and
+                coverage. Even without insurance, we offer different membership
+                levels to fit various budgets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <span
+            ><img
+              src="./AW_Images/AW_logo_white.svg"
+              height="12px"
+              width="auto"
+          /></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links">
+          <a href="#">User Guide</a>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Partners</a>
+        </div>
+
+        <!-- Social Icons and App Store -->
+        <div class="footer-social">
+          <div class="icons">
+            <a href="#"><img src="./AW_Images/youtube.svg" alt="YouTube" /></a>
+            <a href="#"
+              ><img src="./AW_Images/facebook.svg" alt="Facebook"
+            /></a>
+            <a href="#"><img src="./AW_Images/twitter.svg" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="./AW_Images/instagram.svg" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="./AW_Images/linkedin.svg" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">AssistWell © 2025. All rights reserved.</div>
+    </footer>
+
+    <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // accordion begin
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        // if the accordion text is hidden, show it and change the button color to orange
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(
+              "w3-awgrey",
+              "w3-darkpurple"
+            );
+        } else {
+          // if the accordion text is displayed, hide it and change the button color to brown
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(
+              "w3-darkpurple",
+              "w3-awgrey"
+            );
+        }
+      }
+      // accordion end
+    </script>
+  </body>
+</html>

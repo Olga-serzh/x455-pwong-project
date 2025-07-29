@@ -1,25 +1,33 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>W3.CSS Template</title>
+    <link rel="icon" type="image/png" href="./AW_Images/AW-favicon1.svg" />
+    <title>AssistWell</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-     <link
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/w3.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       body {
         font-family: "Poppins", sans-serif;
-        background-color: #EBEAEF;
+        background-color: #ebeaef;
       }
       h1,
       h2,
@@ -32,35 +40,35 @@
       p {
         font-family: "Open Sans", sans-serif;
       }
-      
-   .mySlides {
-    display: block;
+
+      .my-scrolling {
+        height: 300px;
+        overflow: auto;
+      }
+
+      .mySlides {
+        display: block;
         margin-left: auto;
         margin-right: auto;
         max-width: 80%;
       }
       @media (max-width: 768px) {
-  .mySlides {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-    
+        .mySlides {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-      <div
-        class="w3-bar w3-white w3-padding w3-card"
-        
-      >
-
-          <!-- step 1: add shopping cart and search icons -->
+      <div class="w3-bar w3-white w3-padding w3-card">
+        <!-- step 1: add shopping cart and search icons -->
         <!-- Font Awesome 4 reference : https://www.w3schools.com/icons/icons_reference.asp -->
         <div>
           <a class="w3-padding-large w3-hide-small w3-right"
-            ><i class="fa fa-shopping-basket"></i
+            ><i class="fa fa-shopping-cart"></i
           ></a>
           <a class="w3-padding-large w3-hide-small w3-right"
             ><i class="fa fa-search"></i
@@ -68,16 +76,47 @@
         </div>
         <!-- step 1: end -->
 
-        
-        <a href="#home" class="w3-bar-item"><img src="./AW_Images/AW_logo_black.svg" height="20px" width="auto" /></a>
+        <a href="./index.html" class="w3-bar-item"
+          ><img src="./AW_Images/AW_logo_black.svg" height="18px" width="auto"
+        /></a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
-          <a href="./index.html" class="w3-bar-item top-nav" style="text-decoration: none;">Home</a>
-          <a href="./why_AssistWell.html" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;">Why AssistWell</a>
-          <a href="./science.html" class="w3-bar-item top-nav" style="text-decoration: none;">Science</a>
-          <a href="./membership.html" class="w3-bar-item top-nav" style="text-decoration: none;">Membership</a>
-          <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Features</a>
-          <a href="#contact" class="w3-bar-item top-nav" style="text-decoration: none;">Resources</a>
+          <a
+            href="./index.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Home</a
+          >
+          <a
+            href="./why_AssistWell.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none; color: #882ad2"
+            >Why AssistWell</a
+          >
+          <a
+            href="./science.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Science</a
+          >
+          <a
+            href="./membership.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Membership</a
+          >
+          <a
+            href="./features.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Features</a
+          >
+          <a
+            href="./resources.html"
+            class="w3-bar-item top-nav"
+            style="text-decoration: none"
+            >Resources</a
+          >
         </div>
 
         <!-- step 2: for mobile version -->
@@ -106,34 +145,58 @@
       <a
         href="javascript:void(0)"
         onclick="w3_close()"
-        class="w3-bar-item top-nav  w3-large w3-padding-16" style="text-decoration: none;"
+        class="w3-bar-item top-nav w3-large w3-padding-16"
+        style="text-decoration: none"
         >Close &times;</a
       >
-      <a href="./index.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./index.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Home</a
       >
-      <a href="./why_AssistWell.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none; color: #882AD2;"
+      <a
+        href="./why_AssistWell.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none; color: #882ad2"
         >Why AssistWell</a
       >
-      <a href="./science.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./science.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Science</a
       >
-      <a href="./membership.html" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./membership.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Membership</a
       >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./features.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Features</a
       >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item top-nav" style="text-decoration: none;"
+      <a
+        href="./resources.html"
+        onclick="w3_close()"
+        class="w3-bar-item top-nav"
+        style="text-decoration: none"
         >Resources</a
       >
     </nav>
     <!-- step 3: end -->
 
-     <div class="w3-content" style="max-width: 1200px">
+    <div class="w3-content" style="max-width: 1200px">
       <div class="w3-row w3-padding-64" id="seasoning">
         <div class="w3-padding-large">
-          
           <!-- Add carousel slideshow begin -->
           <!-- step 1: add image files to img folder -->
           <!-- step 2: create a class to format the image slides in the <style> tag (inside the <head> tag above) -->
@@ -141,7 +204,11 @@
           <div>
             <!-- step 4: add <img> tags for slideshow -->
             <!-- step 5: add the class to the class property in the <img> tag for each slide -->
-            <img class="mySlides" src="./AW_Images/Carousel/Carousel 1.png" style="width: 100% " />
+            <img
+              class="mySlides"
+              src="./AW_Images/Carousel/Carousel 1.png"
+              style="width: 100%"
+            />
             <!-- step 6: except for the 1st slide, hide all other slide by setting "display: none" -->
             <!-- step 7: add javascript to support carousel slideshow effect inside <script> tag below -->
             <img
@@ -149,7 +216,7 @@
               src="./AW_Images/Carousel/Carousel 2.png"
               style="width: 100%; display: none"
             />
-             <img
+            <img
               class="mySlides"
               src="./AW_Images/Carousel/Carousel 3.png"
               style="width: 100%; display: none"
@@ -159,10 +226,9 @@
               src="./AW_Images/Carousel/Carousel 4.png"
               style="width: 100%; display: none"
             />
-         
           </div>
           <!-- Add carousel slideshow end -->
-              <!-- carousel slideshow end -->
+          <!-- carousel slideshow end -->
 
           <!-- add carousel thumbnail begin-->
           <!-- add thumbnail buttons for selecting a slide to show -->
@@ -174,7 +240,6 @@
           <!-- step 4: style the button with different w3 classes and inline css -->
           <!-- step 5: hook a javascript function to display the selected slide -->
 
-         
           <div class="w3-col s3">
             <!-- "currentDiv(1)" link to 1st slide -->
             <!-- demo class is used by a javascript function to turn off the opacity effect -->
@@ -195,13 +260,13 @@
               onclick="currentDiv(2)"
             />
           </div>
-              <div class="w3-col s3">
+          <div class="w3-col s3">
             <!-- "currentDiv(3)" link to 3rd slide -->
             <!-- demo class is used by a javascript function to turn off the opacity effect -->
             <img
               class="demo w3-opacity w3-hover-opacity-off"
               src="./AW_Images/Carousel/Carousel 3.png"
-              style="width: 100%; cursor: pointer; padding: 7px;"
+              style="width: 100%; cursor: pointer; padding: 7px"
               onclick="currentDiv(3)"
             />
           </div>
@@ -211,62 +276,135 @@
             <img
               class="demo w3-opacity w3-hover-opacity-off"
               src="./AW_Images/Carousel/Carousel 4.png"
-              style="width: 100%; cursor: pointer; padding: 7px;"
+              style="width: 100%; cursor: pointer; padding: 7px"
               onclick="currentDiv(3)"
             />
           </div>
-          
+        </div>
+      </div>
+      <h1 class="w3-center" style="color: #882ad2; font-weight: 500">
+        Why AssistWell
+      </h1>
+    </div>
+
+    <section class="feature-section" style="padding: 3rem 1rem">
+      <div
+        class="feature-container"
+        style="
+          max-width: 1000px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 10rem;
+          row-gap: 5rem;
+        "
+      >
+        <!-- Feature 1 -->
+        <div class="feature-box" style="text-align: left">
+          <img
+            src="./AW_Images/Why AssistWell Icons/Vector-1.svg"
+            alt="Heart icon"
+            style="width: 40px; margin-bottom: 1rem"
+          />
+          <h3>Designed for Real Life</h3>
+          <div
+            class="scrollable-text"
+            style="max-height: 100px; overflow-y: auto; padding-right: 0.5rem"
+          >
+            <p>
+              AssistWell fits into your everyday routine — not the other way
+              around. Whether you're at work, on a walk, or winding down for the
+              night, tracking your health feels natural, not disruptive.
+            </p>
+            <p>
+              You don’t need to change your lifestyle to use AssistWell — it’s
+              built to integrate with how you already live. With passive
+              tracking, quick log options, and friendly reminders, the system
+              quietly supports you behind the scenes while you stay focused on
+              life.
+            </p>
           </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-box" style="text-align: left">
+          <img
+            src="./AW_Images/Why AssistWell Icons/Vector-2.svg"
+            alt="Science icon"
+            style="width: 40px; margin-bottom: 1rem"
+          />
+          <h3>Backed by Science</h3>
+          <div
+            class="scrollable-text"
+            style="max-height: 100px; overflow-y: auto; padding-right: 0.5rem"
+          >
+            <p>
+              Developed with input from healthcare professionals and grounded in
+              clinical research, AssistWell combines medical-grade data tracking
+              with AI-powered analysis to support smarter care.
+            </p>
+            <p>
+              Our technology is built on years of clinical insight and tested
+              protocols to ensure reliable, actionable feedback. Your data
+              doesn’t just sit in a chart — it works for you, unlocking
+              patterns, risk flags, and real-time insights your care team can
+              act on.
+            </p>
           </div>
-          <h1 class="w3-center" style="color: #882AD2;">Why AssistWell</h1>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-box" style="text-align: left">
+          <img
+            src="./AW_Images/Why AssistWell Icons/Vector-3.svg"
+            alt="Personalization icon"
+            style="width: 40px; margin-bottom: 1rem"
+          />
+          <h3>Personalized, Not One-Size-Fits-All</h3>
+          <div
+            class="scrollable-text"
+            style="max-height: 100px; overflow-y: auto; padding-right: 0.5rem"
+          >
+            <p>
+              No two migraine stories are the same. AssistWell adapts to your
+              unique patterns and provides insights tailored to your body, your
+              lifestyle, and your needs.
+            </p>
+            <p>
+              From hormonal shifts and weather changes to stress and nutrition,
+              AssistWell learns what makes your story different. The more you
+              use it, the smarter it gets — helping you understand triggers and
+              anticipate flare-ups before they happen.
+            </p>
           </div>
+        </div>
 
-<section class="feature-section" style="padding: 4rem 1rem;">
-  <div class="feature-container" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; column-gap: 12rem; row-gap: 3rem;">
-    
-    <!-- Feature 1 -->
-    <div class="feature-box" style="text-align: left;">
-      <img src="./AW_Images/Why AssistWell Icons/Vector-1.svg" alt="Heart icon" style="width: 40px; margin-bottom: 1rem;">
-      <h3>Designed for Real Life</h3>
-      <p>
-        AssistWell fits into your everyday routine — not the other way around. Whether you're at work, on a walk, or winding down for the night, tracking your health feels natural, not disruptive.
-      </p>
-    </div>
-
-    <!-- Feature 2 -->
-    <div class="feature-box" style="text-align: left;">
-      <img src="./AW_Images/Why AssistWell Icons/Vector-2.svg" alt="Science icon" style="width: 40px; margin-bottom: 1rem;">
-      <h3>Backed by Science</h3>
-      <p>
-        Developed with input from healthcare professionals and grounded in clinical research, AssistWell combines medical-grade data tracking with AI-powered analysis to support smarter care.
-      </p>
-    </div>
-
-    <!-- Feature 3 -->
-    <div class="feature-box" style="text-align: left;">
-      <img src="./AW_Images/Why AssistWell Icons/Vector-3.svg" alt="Personalization icon" style="width: 40px; margin-bottom: 1rem;">
-      <h3>Personalized, Not One-Size-Fits-All</h3>
-      <p>
-        No two migraine stories are the same. AssistWell adapts to your unique patterns and provides insights tailored to your body, your lifestyle, and your needs.
-      </p>
-    </div>
-
-    <!-- Feature 4 -->
-    <div class="feature-box" style="text-align: left;">
-      <img src="./AW_Images/Why AssistWell Icons/Vector-4.svg" alt="Checkmark icon" style="width: 40px; margin-bottom: 1rem;">
-      <h3>More Than an App — It’s a Care Partner</h3>
-      <p>
-        AssistWell connects you to your care team through secure video calls and keeps your health plan accessible, so you’re never navigating your journey alone.
-      </p>
-    </div>
-
-  </div>
-</section>
- 
-
-
-
-    
+        <!-- Feature 4 -->
+        <div class="feature-box" style="text-align: left">
+          <img
+            src="./AW_Images/Why AssistWell Icons/Vector-4.svg"
+            alt="Checkmark icon"
+            style="width: 40px; margin-bottom: 1rem"
+          />
+          <h3>Your Care Partner</h3>
+          <div
+            class="scrollable-text"
+            style="max-height: 100px; overflow-y: auto; padding-right: 0.5rem"
+          >
+            <p>
+              AssistWell connects you to your care team through secure video
+              calls and keeps your health plan accessible, so you’re never
+              navigating your journey alone.
+            </p>
+            <p>
+              Beyond symptom tracking, AssistWell becomes a partner in your
+              health — a digital advocate that keeps your care team informed,
+              your notes organized, and your personal goals at the center of
+              every decision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- step 4: add javascript to support responsive navbar -->
     <script>
@@ -334,40 +472,44 @@
     <!-- step 4: end -->
 
     <footer class="footer">
-  <div class="footer-container">
-    
-    <!-- Logo -->
-    <div class="footer-logo">
-      <span><img src="./AW_Images/AW_logo_white.svg" height="12px" width="auto" /></span>
-    </div>
+      <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <span
+            ><img
+              src="./AW_Images/AW_logo_white.svg"
+              height="12px"
+              width="auto"
+          /></span>
+        </div>
 
-    <!-- Navigation Links -->
-    <div class="footer-links">
-      <a href="#">User Guide</a>
-      <a href="#">Help Center</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Partners</a>
-    </div>
+        <!-- Navigation Links -->
+        <div class="footer-links">
+          <a href="#">User Guide</a>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Partners</a>
+        </div>
 
-    <!-- Social Icons and App Store -->
-    <div class="footer-social">
-      <div class="icons">
-        <a href="#"><img src="./AW_Images/youtube.svg" alt="YouTube"></a>
-        <a href="#"><img src="./AW_Images/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="./AW_Images/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="./AW_Images/instagram.svg" alt="Instagram"></a>
-        <a href="#"><img src="./AW_Images/linkedin.svg" alt="LinkedIn"></a>
+        <!-- Social Icons and App Store -->
+        <div class="footer-social">
+          <div class="icons">
+            <a href="#"><img src="./AW_Images/youtube.svg" alt="YouTube" /></a>
+            <a href="#"
+              ><img src="./AW_Images/facebook.svg" alt="Facebook"
+            /></a>
+            <a href="#"><img src="./AW_Images/twitter.svg" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="./AW_Images/instagram.svg" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="./AW_Images/linkedin.svg" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
       </div>
-     
-    </div>
 
-  </div>
-
-  <div class="footer-bottom">
-    AssistWell © 2025. All rights reserved.
-  </div>
-</footer>
-
-
+      <div class="footer-bottom">AssistWell © 2025. All rights reserved.</div>
+    </footer>
   </body>
 </html>
