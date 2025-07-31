@@ -84,6 +84,11 @@
         border-radius: 12px;
         overflow: hidden;
       }
+      @media screen and (max-width: 768px) {
+        #hero {
+          height: 450px !important; /* this controls how much of the background image is visible */
+        }
+      }
     </style>
   </head>
   <body>
@@ -234,19 +239,33 @@
         background-repeat: no-repeat;
         height: 800px; /* desktop default */
       "
-      id="home"
+      id="hero"
     >
       <div
         class="w3-display-left w3-text-black"
         style="padding-left: 80px; padding-top: 50px"
       >
-        <span class="w3-jumbo" style="letter-spacing: normal"
+        <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal"
           >Let's Take Care</span
         ><br />
-        <span class="w3-jumbo" style="letter-spacing: normal"
+        <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal"
           >of This Together.</span
         ><br />
-
+        <!-- Mobile Heading -->
+        <span
+          class="w3-xxlarge w3-hide-medium w3-hide-large"
+          style="letter-spacing: normal"
+        >
+          Let's Take Care
+        </span>
+        <br />
+        <span
+          class="w3-xxlarge w3-hide-medium w3-hide-large"
+          style="letter-spacing: normal"
+        >
+          of This Together.
+        </span>
+        <br />
         <h6>
           <a href="#" class="learn-more-btn">Join Now</a>
         </h6>
