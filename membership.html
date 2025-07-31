@@ -222,169 +222,159 @@
 
     <!-- Header -->
     <header
-  class="w3-display-container w3-content w3-wide"
-  style="
-    max-width: 1600px;
-    width: 100%;
-    padding-top: 20px;
-    overflow-x: hidden;
-    background-image: url('./AW_Images/Home_Hero 3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 800px; /* desktop default */
-  "
-  id="home"
->
-  <div
-    class="w3-display-left w3-text-black"
-    style="padding-left: 80px; padding-top: 50px"
-  >
-    <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal"
-      >Let's Take Care</span
-    ><br />
-    <span class="w3-jumbo w3-hide-small" style="letter-spacing: normal"
-      >of This Together.</span
-    ><br />
-    <span
-      class="w3-xxlarge w3-hide-large w3-hide-medium"
-      style="letter-spacing: normal"
-      >Let's Take Care</span
-    ><br />
-    <span
-      class="w3-xxlarge w3-hide-large w3-hide-medium"
-      style="letter-spacing: normal"
-      >of This Together.</span
-    ><br />
-    <h6>
-      <a href="#" class="learn-more-btn">Join Now</a>
-    </h6>
-  </div>
-</header>
+      class="w3-display-container w3-content w3-wide"
+      style="
+        max-width: 1600px;
+        width: 100%;
+        padding-top: 20px;
+        overflow-x: hidden;
+        background-image: url('./AW_Images/Home_Hero 3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 800px; /* desktop default */
+      "
+      id="home"
+    >
+      <div
+        class="w3-display-left w3-text-black"
+        style="padding-left: 80px; padding-top: 50px"
+      >
+        <span class="w3-jumbo" style="letter-spacing: normal"
+          >Let's Take Care</span
+        ><br />
+        <span class="w3-jumbo" style="letter-spacing: normal"
+          >of This Together.</span
+        ><br />
 
-      <section style="text-align: center">
-        <!-- Membership Cards -->
-        <div
-          style="
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-          "
-        >
-          <!-- Basic Plan -->
-          <div style="width: 340px">
-            <h3 style="font-weight: 600; margin-bottom: 1rem">Basic</h3>
-            <div class="plan-image">
-              <img
-                src="./AW_Images/Basic.png"
-                alt="Basic plan with sensor"
-                style="width: 100%; border-radius: 1rem"
-              />
-            </div>
-            <a href="#" class="membership-btn">Start With Basic</a>
-          </div>
+        <h6>
+          <a href="#" class="learn-more-btn">Join Now</a>
+        </h6>
+      </div>
+    </header>
 
-          <!-- Plus Plan -->
-          <div style="width: 340px">
-            <h3 style="font-weight: 600; margin-bottom: 1rem">Plus</h3>
-            <div class="plan-image">
-              <img
-                src="./AW_Images/Plus.png"
-                alt="Plus plan with sensor"
-                style="width: 100%; border-radius: 1rem"
-              />
-            </div>
-            <a href="#" class="membership-btn">Start With Plus</a>
+    <section style="text-align: center">
+      <!-- Membership Cards -->
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2rem;
+        "
+      >
+        <!-- Basic Plan -->
+        <div style="width: 340px">
+          <h3 style="font-weight: 600; margin-bottom: 1rem">Basic</h3>
+          <div class="plan-image">
+            <img
+              src="./AW_Images/Basic.png"
+              alt="Basic plan with sensor"
+              style="width: 100%; border-radius: 1rem"
+            />
           </div>
-
-          <!-- Premium Plan -->
-          <div style="width: 340px">
-            <h3 style="font-weight: 600; margin-bottom: 1rem">Premium</h3>
-            <div class="plan-image">
-              <img
-                src="./AW_Images/Premium.png"
-                alt="Premium plan with sensor"
-                style="width: 100%; border-radius: 1rem"
-              />
-            </div>
-            <a href="#" class="membership-btn">Start With Premium</a>
-          </div>
+          <a href="#" class="membership-btn">Start With Basic</a>
         </div>
-      </section>
 
-      <!-- Sortable Table Section -->
-      <div class="w3-container w3-padding-64" id="membership plan">
-        <div class="w3-padding-large">
-          <h2 class="w3-center" style="color: #1d5bb8">
-            Compare the Memberships
-          </h2>
-          <!-- add sortable table begin -->
-          <!-- step 1: if the table displays images, add image files to img folder -->
-          <!-- step 2: create a table with 4 columns -->
-          <!-- step 3: add jquery links inside the <head> tag above to support sortability -->
-          <!-- step 4: add javascript in <script> tag below to sort in in ascending/descending order -->
-
-          <div style="overflow-x: auto; width: 100%">
-            <table id="myTable" class="w3-table-all">
-              <thead>
-                <tr style="background-color: #494556; color: white">
-                  <th>Plan</th>
-                  <th>Monthly Cost</th>
-                  <th>Included Features</th>
-                  <th>Best For</th>
-                </tr>
-              </thead>
-              <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
-                <td>
-                  <img
-                    src="./AW_Images/Membership Icons/Basic.svg"
-                    style="width: 80px"
-                  />
-                </td>
-                <td>$19.99</td>
-                <td>AssistSensor, App Access, Activity & Migraine Logging</td>
-                <td>New Users</td>
-              </tr>
-              <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
-                <td>
-                  <img
-                    src="./AW_Images/Membership Icons/Plus.svg"
-                    style="width: 80px"
-                  />
-                </td>
-                <td>$29.99</td>
-                <td>All Basic + AI Insights + Symptom History</td>
-                <td>Frequent Migraine Sufferers</td>
-              </tr>
-              <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
-                <td>
-                  <img
-                    src="./AW_Images/Membership Icons/Premium.svg"
-                    style="width: 80px"
-                  />
-                </td>
-                <td>$39.99</td>
-                <td>All Plus + Secure Video Calls + Detailed Health Reports</td>
-                <td>Patients in Active Treatment</td>
-              </tr>
-              <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
-                <td>
-                  <img
-                    src="./AW_Images/Membership Icons/Provider.svg"
-                    style="width: 80px"
-                  />
-                </td>
-                <td>$79.99</td>
-                <td>
-                  Access to Patient Dashboards, Health Reports, Trends & Notes
-                </td>
-                <td>Healthcare Professionals</td>
-              </tr>
-            </table>
+        <!-- Plus Plan -->
+        <div style="width: 340px">
+          <h3 style="font-weight: 600; margin-bottom: 1rem">Plus</h3>
+          <div class="plan-image">
+            <img
+              src="./AW_Images/Plus.png"
+              alt="Plus plan with sensor"
+              style="width: 100%; border-radius: 1rem"
+            />
           </div>
-          <!-- add sortable table end -->
+          <a href="#" class="membership-btn">Start With Plus</a>
         </div>
+
+        <!-- Premium Plan -->
+        <div style="width: 340px">
+          <h3 style="font-weight: 600; margin-bottom: 1rem">Premium</h3>
+          <div class="plan-image">
+            <img
+              src="./AW_Images/Premium.png"
+              alt="Premium plan with sensor"
+              style="width: 100%; border-radius: 1rem"
+            />
+          </div>
+          <a href="#" class="membership-btn">Start With Premium</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sortable Table Section -->
+    <div class="w3-container w3-padding-64" id="membership plan">
+      <div class="w3-padding-large">
+        <h2 class="w3-center" style="color: #1d5bb8">
+          Compare the Memberships
+        </h2>
+        <!-- add sortable table begin -->
+        <!-- step 1: if the table displays images, add image files to img folder -->
+        <!-- step 2: create a table with 4 columns -->
+        <!-- step 3: add jquery links inside the <head> tag above to support sortability -->
+        <!-- step 4: add javascript in <script> tag below to sort in in ascending/descending order -->
+
+        <div style="overflow-x: auto; width: 100%">
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr style="background-color: #494556; color: white">
+                <th>Plan</th>
+                <th>Monthly Cost</th>
+                <th>Included Features</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
+              <td>
+                <img
+                  src="./AW_Images/Membership Icons/Basic.svg"
+                  style="width: 80px"
+                />
+              </td>
+              <td>$19.99</td>
+              <td>AssistSensor, App Access, Activity & Migraine Logging</td>
+              <td>New Users</td>
+            </tr>
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
+              <td>
+                <img
+                  src="./AW_Images/Membership Icons/Plus.svg"
+                  style="width: 80px"
+                />
+              </td>
+              <td>$29.99</td>
+              <td>All Basic + AI Insights + Symptom History</td>
+              <td>Frequent Migraine Sufferers</td>
+            </tr>
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
+              <td>
+                <img
+                  src="./AW_Images/Membership Icons/Premium.svg"
+                  style="width: 80px"
+                />
+              </td>
+              <td>$39.99</td>
+              <td>All Plus + Secure Video Calls + Detailed Health Reports</td>
+              <td>Patients in Active Treatment</td>
+            </tr>
+            <tr class="w3-hover-awpurple" style="background-color: #ebeaef">
+              <td>
+                <img
+                  src="./AW_Images/Membership Icons/Provider.svg"
+                  style="width: 80px"
+                />
+              </td>
+              <td>$79.99</td>
+              <td>
+                Access to Patient Dashboards, Health Reports, Trends & Notes
+              </td>
+              <td>Healthcare Professionals</td>
+            </tr>
+          </table>
+        </div>
+        <!-- add sortable table end -->
       </div>
     </div>
     <footer class="footer">
